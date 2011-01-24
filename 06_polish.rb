@@ -69,7 +69,7 @@ class GameWindow < Gosu::Window
     @ship.reset
   end
   
-  # Will create a new player is lives are available
+  # Will create a new player if lives are available
   def new_player
     if @life_counter > 0 then
       @life_counter -= 1
@@ -157,6 +157,7 @@ class GameWindow < Gosu::Window
   
   def draw
     draw_game_ui
+    # TODO tile background image to fit Window size
     @background_image.draw(0, 0, ZOrder::Background) 
     @stars.each {|star| star.draw}
     
@@ -171,7 +172,7 @@ class GameWindow < Gosu::Window
     @font.draw("Score: #{@score}", 10, 10, ZOrder::UI, 1.0, 1.0, 0xffffff00)
     
     w = @font.text_width("Level: #{current_level}")
-    @font.draw("Level: #{current_level}", (620 - w), 10, ZOrder::UI, 1.0, 1.0, 0xffffff00)
+    @font.draw("Level: #{current_level}", (width - 20 - w), 10, ZOrder::UI, 1.0, 1.0, 0xffffff00)
 
     draw_life_counter
     draw_pause_screen if @paused
@@ -179,7 +180,7 @@ class GameWindow < Gosu::Window
     draw_energy_guage
   end
   
-  def draw_text(text, x, y, align = :centered)
+  def draw_text(text, x, y)
     w = @font.text_width(text)
     h = @font.height
     @font.draw(text, (x - w / 2), (y - h / 2), ZOrder::UI, 1.0, 1.0, 0xffffff00)
@@ -216,7 +217,7 @@ class GameWindow < Gosu::Window
     sc = 0xcc3366ff  # blue gauge
 
     if @ship.shield_counter >= Ship::MAX_SHIELD_ENERGY then
-      sc = 0xccff6633  # orange gauage
+      sc = 0xccff6633  # orange gauge
     end
     
     sh = height - (@ship.shield_counter * 0.05)
