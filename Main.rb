@@ -194,9 +194,9 @@ class GameWindow < Gosu::Window
     end
     
     sh = height - (@ship.shield_counter * 0.05)
-    draw_quad((width - 20), height, sc, 
+    draw_quad((width - 10), height, sc, 
                width, height, sc, 
-               (width - 20), sh, sc, 
+               (width - 10), sh, sc, 
                width, sh, sc, ZOrder::UI)
     
   end
