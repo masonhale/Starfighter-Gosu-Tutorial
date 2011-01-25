@@ -150,7 +150,7 @@ class GameWindow < Gosu::Window
     draw_life_counter
     draw_pause_screen if @paused
     draw_game_over_screen if @game_over
-    draw_energy_guage
+    draw_energy_gauge
   end
   
   def draw_text(text, x, y)
@@ -185,8 +185,8 @@ class GameWindow < Gosu::Window
     end
   end
   
-  def draw_energy_guage
-    # draw shield guage
+  def draw_energy_gauge
+    # draw shield gauge
     sc = 0xcc3366ff  # blue gauge
 
     if @ship.shield_counter >= Ship::MAX_SHIELD_ENERGY then
