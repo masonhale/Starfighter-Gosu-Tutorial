@@ -1,6 +1,19 @@
-This is another ruby tutorial for the awesome Gosu game library.
+This is another ruby tutorial for the awesome Gosu game library. (http://www.libgosu.org)
 
-This tutorial builds on the RubyTutorial example that is included in the game library. As a project to help teach my teenage son Ruby programming, we dissected the original Gosu Ruby Tutorial and put it back to together in steps to learn the basics of game programming and to make a game of our own. This tutorial borrows heavily from the media assets of the Gosu examples that are included in the library.
+This tutorial builds on the Ruby Tutorial example that is included in the game library. As a project to help teach my teenage son Ruby programming, we dissected the original Gosu Ruby Tutorial and put it back to together in steps to learn the basics of game programming and to make a game of our own. This tutorial borrows heavily from the media assets of the Gosu examples.
+
+Running
+=======
+
+First, you need to install the gosu gem:
+$ gem install gosu
+
+Run the Main.rb file to see the final game:
+$ ruby Main.rb
+
+
+Background
+==========
 
 The original Ruby Tutorial featured Asteroids-style navigation where left and right arrow keys rotate the ship, and the up and down keys control thrust and brake. The objective of the tutorial was to fly around the screen collecting stars.
 
