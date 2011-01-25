@@ -19,5 +19,6 @@ This tutorial is broken into 6 steps:
   03_basic_control.rb -- demonstrates input with a Ship that can fly around the screen
   04_sounds_and_weaponry.rb -- adds weapons and sounds to 03_basic_control
   05_collisions.rb -- add Stars as obstacles with simple collision detection
-  06_polish.rb -- completes the game by adding user interface, life counting, pause, etc.
-  Main.rb -- final game, split into separate files in lib directory
+  Main.rb -- complete game with user interface, life counting, pause, etc. 
+      Classes are organized into separate files in lib directory
+
