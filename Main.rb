@@ -1,8 +1,6 @@
 require 'rubygems'
 require 'gosu'
 
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-
 require 'lib/zorder'
 require 'lib/game_utilities'
 require 'lib/ship'
