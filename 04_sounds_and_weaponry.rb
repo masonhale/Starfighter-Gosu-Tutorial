@@ -98,7 +98,7 @@ class Ship
   attr_accessor :speed
 
   def initialize(window)
-    @ship_image = Gosu::Image.new(window, 'media/starfighter.bmp', true)
+    @ship_image = Gosu::Image.new(window, 'media/starfighter.bmp', false)
     @shield_image = Gosu::Image.new(window,"media/shield.png",false)
     @window = window
     @x = window.width / 2

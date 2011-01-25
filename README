@@ -20,4 +20,4 @@ This tutorial is broken into 6 steps:
   04_sounds_and_weaponry.rb -- adds weapons and sounds to 03_basic_control
   05_collisions.rb -- add Stars as obstacles with simple collision detection
   06_polish.rb -- completes the game by adding user interface, life counting, pause, etc.
-  
+  Main.rb -- final game, split into separate files in lib directory

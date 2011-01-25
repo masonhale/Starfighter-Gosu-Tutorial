@@ -40,14 +40,14 @@ class GameWindow < Gosu::Window
     # given a 'sprite' image, splits it into evenly-sized 'tiles'
     # based on given width, height
     # returns an array of Gosu::Image objects
-    @star_anim = Gosu::Image::load_tiles(self, "media/star.png", 25, 25, true)
+    @star_anim = Gosu::Image::load_tiles(self, "media/star.png", 25, 25, false)
     
     # Note that pure magenta color (0xffff00ff) in BMP files is 
     # rendered as transparent
-    @ship_image =  Gosu::Image.new(self, 'media/starfighter.bmp', true)
+    @ship_image =  Gosu::Image.new(self, 'media/starfighter.bmp', false)
     
     
-    @shield_image = Gosu::Image.new(self, 'media/shield.png', true)
+    @shield_image = Gosu::Image.new(self, 'media/shield.png', false)
     
   end
   

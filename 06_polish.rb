@@ -39,7 +39,7 @@ end
 class GameWindow < Gosu::Window
   
   def initialize
-    super(960,480,false)
+    super(640,480,false)
     self.caption = "Sounds & Weaponry Demo"
     @font = Gosu::Font.new(self, Gosu::default_font_name, 20)
     @counter = 0
@@ -275,7 +275,7 @@ class Ship
   end
   
   def self.load_image(window)
-    @ship_image ||= Gosu::Image.new(window, 'media/starfighter.bmp', true)
+    @ship_image ||= Gosu::Image.new(window, 'media/starfighter.bmp', false)
   end
   
   def initialize(window)
@@ -736,7 +736,7 @@ class Star
   
   def self.load_animation(window)
      @animation ||= Gosu::Image::load_tiles(window, "media/star.png", 
-        TILE_WIDTH, TILE_HEIGHT, true)
+        TILE_WIDTH, TILE_HEIGHT, false)
   end
 
   def self.load_sound(window)

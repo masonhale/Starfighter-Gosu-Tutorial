@@ -160,7 +160,7 @@ class Ship
   end
   
   def self.load_image(window)
-    @ship_image ||= Gosu::Image.new(window, 'media/starfighter.bmp', true)
+    @ship_image ||= Gosu::Image.new(window, 'media/starfighter.bmp', false)
   end
   
   def initialize(window)
