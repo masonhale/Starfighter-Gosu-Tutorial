@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'gosu'
 
-require 'lib/zorder'
-require 'lib/game_utilities'
-require 'lib/ship'
-require 'lib/star'
-require 'lib/weapons'
+require_relative 'lib/zorder'
+require_relative 'lib/game_utilities'
+require_relative 'lib/ship'
+require_relative 'lib/star'
+require_relative 'lib/weapons'
 
 class GameWindow < Gosu::Window
   
