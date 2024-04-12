@@ -1,3 +1,5 @@
+require_relative 'base_shot'
+
 class Nuke < BaseShot
     
   def self.load_image(window)

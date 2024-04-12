@@ -1,3 +1,5 @@
+require_relative 'base_shot'
+
 class SuperShot < BaseShot
 
   def initialize(window, player, x, y)

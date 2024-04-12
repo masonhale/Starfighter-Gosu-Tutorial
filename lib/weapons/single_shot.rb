@@ -1,3 +1,4 @@
+require_relative 'base_shot'
 
 class SingleShot < BaseShot
   

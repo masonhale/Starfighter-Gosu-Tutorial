@@ -1,3 +1,5 @@
+require_relative 'base_shot'
+
 # A DoubleShot is a container for 2 single shots
 class DoubleShot < BaseShot
   
